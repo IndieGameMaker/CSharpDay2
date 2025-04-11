@@ -7,7 +7,7 @@
 - 조건식이 true일 경우에만 실행됩니다.
 
 ### if 문 기본
-
+#### 문법
 ```csharp
 if (조건식)
 {
@@ -71,7 +71,7 @@ if (!isPlayerDead)
 ```
 
 ### if-else 문
-
+#### 문법
 ```csharp
 if (조건식)
 {
@@ -107,8 +107,8 @@ else
     Console.WriteLine("열쇠가 없습니다."); // 한 줄만 else문에 포함됨
 ```
 
-## if-else if-else 문
-
+### if-else if-else 문
+#### 문법
 ```csharp
 if (조건식1)
 {
