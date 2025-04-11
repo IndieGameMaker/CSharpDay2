@@ -40,18 +40,24 @@ if (조건식) {
 ```csharp
 // Boolean 타입 - true 또는 false 값만 가질 수 있다.
 bool isGameOver = false;
-bool hasKey = false;
-bool isPlayerDead = false;
 
 if (isGameOver)
 {
     // 게임이 종료된 경우
     Console.WriteLine("게임이 종료되었습니다.");
 }
+```
+
+```csharp
+bool hasKey = false;
 
 // 중괄호 {} 없는 if문 (한 줄만 실행할 경우)
 if (hasKey == true)
     Console.WriteLine("열쇠를 가지고 있습니다."); // 한 줄만 if문에 포함됨
+```
+
+```csharp
+bool isPlayerDead = false;
 
 if (isPlayerDead == false)
 {
