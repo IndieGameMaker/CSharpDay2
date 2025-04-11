@@ -138,10 +138,26 @@ if (playerLevel < 10)
 }
 else if (playerLevel < 20)
 {
-    Console.WriteLine("중렙");
+    Console.WriteLine("중수");
 }
 else
 {
     Console.WriteLine("고인물");
 }
 ```
+
+### 연산자
+#### 비교 연산자
+- == (같다) : 두 값이 같을 때 true
+- > (크다) : 왼쪽 값이 오른쪽 값보다 클 때 true
+- < (작다) : 왼쪽 값이 오른쪽 값보다 작을 때 true
+- >= (크거나 같다) : 왼쪽 값이 오른쪽 값보다 크거나 같을 때 true
+- <= (작거나 같다) : 왼쪽 값이 오른쪽 값보다 작거나 같을 때 true
+- != (같지 않다) : 두 값이 다를 때 true
+    
+#### 논리 연산자
+- && (AND) : 두 조건이 모두 true일 때 true
+- || (OR) : 두 조건 중 하나라도 true일 때 true
+- ! (NOT) : 조건이 false일 때 true
+
+#### 삼항 연산자
