@@ -87,7 +87,6 @@ else
 
 ```csharp
 bool isGameOver = false;
-bool hasKey = false;
 
 if (isGameOver)
 {
@@ -99,6 +98,10 @@ else
     // 게임이 종료되지 않은 경우
     Console.WriteLine("게임이 진행 중입니다.");
 }
+```
+
+```csharp
+bool hasKey = false;
 
 // 중괄호 {} 없는 if-else문 (한 줄만 실행할 경우)
 if (hasKey)
