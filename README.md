@@ -35,7 +35,7 @@ if (조건식) {
 }
 ```
 
-### 예제
+#### 예제
 
 ```csharp
 // Boolean 타입 - true 또는 false 값만 가질 수 있다.
@@ -83,7 +83,7 @@ else
 }
 ```
 
-### 예제
+#### 예제
 
 ```csharp
 bool isGameOver = false;
@@ -105,4 +105,40 @@ if (hasKey)
     Console.WriteLine("열쇠를 가지고 있습니다."); // 한 줄만 if문에 포함됨
 else
     Console.WriteLine("열쇠가 없습니다."); // 한 줄만 else문에 포함됨
+```
+
+## if-else if-else 문
+
+```csharp
+if (조건식1)
+{
+    // 조건식1이 참일 때 실행되는 구문
+}
+else if (조건식2)
+{
+    // 조건식2가 참일 때 실행되는 구문
+}
+else
+{
+    // 모든 조건식이 거짓일 때 실행되는 구문
+}
+```
+
+#### 예제
+
+```csharp
+int playerLevel = 5;
+
+if (playerLevel < 10)
+{
+    Console.WriteLine("쪼렙");
+}
+else if (playerLevel < 20)
+{
+    Console.WriteLine("중렙");
+}
+else
+{
+    Console.WriteLine("고인물");
+}
 ```
