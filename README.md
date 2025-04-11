@@ -35,14 +35,13 @@ if (조건식) {
 }
 ```
 
-
-
 ### 예제
 
 ```csharp
 // Boolean 타입 - true 또는 false 값만 가질 수 있다.
 bool isGameOver = false;
 bool hasKey = false;
+bool isPlayerDead = false;
 
 if (isGameOver)
 {
@@ -51,8 +50,18 @@ if (isGameOver)
 }
 
 // 중괄호 {} 없는 if문 (한 줄만 실행할 경우)
-if (hasKey)
+if (hasKey == true)
     Console.WriteLine("열쇠를 가지고 있습니다."); // 한 줄만 if문에 포함됨
+
+if (isPlayerDead == false)
+{
+    Console.WriteLine("플레이어가 살아있습니다.");
+}
+
+if (!isPlayerDead)
+{
+    Console.WriteLine("플레이어가 살아있습니다.");
+}
 ```
 
 ### if-else 문
