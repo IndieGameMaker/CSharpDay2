@@ -163,3 +163,120 @@ else
 - ! (NOT) : 조건이 false일 때 true
 
 #### 삼항 연산자
+
+- if-else 문을 간단하게 표현하는 문법
+  
+```
+변수 = (조건식) ? 참일 때 값 : 거짓일 때 값
+```
+
+- 단순한 삼항 연산자의 경우 코드의 가독성이 높아지고, 간결하게 표현
+- 하지만 복잡한 조건문을 사용할 경우 가독성이 떨어질 수 있습니다.
+
+```csharp
+int playerHealth = 30;
+string msg;
+
+// 삼항 연산자 기본 구조: (조건) ? 참일 때 값 : 거짓일 때 값
+msg = (playerHealth > 0) ? "플레이어 생존" : "게임 오버";
+Console.WriteLine(msg);
+```
+
+```csharp
+// if-else 대신 삼항 연산자 사용
+int score = 95;
+string grade = (score >= 90) ? "A" : "B";
+Console.WriteLine($"점수: {score}, 등급: {grade}");
+```
+
+## switch문
+### 개요
+- switch문은 여러 조건을 비교하여 해당하는 코드 블록을 실행하는 제어문
+
+#### 문법
+```csharp
+switch (변수)
+{
+    case 값1:
+        // 값1과 일치할 때 실행되는 구문
+        break;
+    case 값2:
+        // 값2와 일치할 때 실행되는 구문
+        break;
+    default:
+        // 모든 case와 일치하지 않을 때 실행되는 구문
+        break;
+}
+```
+#### 예제
+```csharp
+int weaponId = 2;
+string weaponName;
+
+switch (weaponId)
+{
+    case 1:
+        weaponName = "검";
+        break;
+        
+    case 2:
+        weaponName = "활";
+        break;
+        
+    case 3:
+        weaponName = "도끼";
+        break;
+        
+    case 4:
+        weaponName = "창";
+        break;
+        
+    default:
+        weaponName = "주먹";
+        break;
+}
+
+Console.WriteLine($"현재 무기: {weaponName}");
+```
+
+#### 예제 2 - case grouping
+
+```csharp
+char buttonPressed = 'A';
+string action;
+
+switch (buttonPressed)
+{
+    case 'W':
+    case 'w':
+        action = "앞으로 이동";
+        break;
+        
+    case 'A':
+    case 'a':
+        action = "왼쪽으로 이동";
+        break;
+        
+    case 'S':
+    case 's':
+        action = "뒤로 이동";
+        break;
+        
+    case 'D':
+    case 'd':
+        action = "오른쪽으로 이동";
+        break;
+        
+    case 'J':
+    case 'j':
+    case ' ':  // 스페이스바
+        action = "점프";
+        break;
+        
+    default:
+        action = "아무 동작 없음";
+        break;
+}
+
+Console.WriteLine($"입력 버튼: {buttonPressed}, 수행 동작: {action}");
+```
